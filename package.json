@@ -1,0 +1,27 @@
+{
+  "name": "books",
+  "description": "Sample web app that manages book information.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicrosoftDocs/mslearn-build-a-web-app-with-mean-on-a-linux-vm.git"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "~1.18",
+    "express": "~4.16",
+    "mongodb": "^7.2.0",
+    "mongoose": "^9.6.3"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/MicrosoftDocs/mslearn-build-a-web-app-with-mean-on-a-linux-vm/issues"
+  },
+  "homepage": "https://github.com/MicrosoftDocs/mslearn-build-a-web-app-with-mean-on-a-linux-vm#readme"
+}
