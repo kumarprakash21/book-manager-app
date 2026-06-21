@@ -1,0 +1,26 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: book-manager-app-deployment
+  namespace: book-manager-app
+  labels:
+    app: book-manager-app
+
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: book-manager-app
+  template:
+    metadata:
+      labels:
+        app: book-manager-app
+    spec:
+      containers:
+      - name: book-manager-app
+        image: prakashgautam1998/book-manager-app
+        ports:
+        - containerPort: 80
+        env:
+        - name: MONGO_URL
+          value: mongodb://mongo:27017/Books

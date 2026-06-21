@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: book-manager-app-sv
+  namespace: book-manager-app
+spec:
+  selector:
+    app: book-manager-app
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+  type: ClusterIP
